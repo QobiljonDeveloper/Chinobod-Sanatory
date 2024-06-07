@@ -3,7 +3,7 @@
     <Header />
     <Navbar />
     <ShowCase />
-    <Page/>
+    <AboutWe/>
   </div>
 </template>
 
@@ -11,8 +11,7 @@
 import Header from './components/Header/Header.vue';
 import Navbar from "./components/Navbar/Navbar.vue";
 import ShowCase from "./components/ShowCase/ShowCase.vue";
-import Page from "./components/Page/Page.vue";
-import Texts from './components/Texts/Texts.vue';
+import AboutWe from "./components/Page/AboutWe.vue"
 </script>
 
 <style scoped>
