@@ -4,6 +4,7 @@
     <Navbar />
     <ShowCase />
     <Page/>
+    <Map/>
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import Navbar from "./components/Navbar/Navbar.vue";
 import ShowCase from "./components/ShowCase/ShowCase.vue";
 import Page from "./components/Page/Page.vue";
 import Texts from './components/Texts/Texts.vue';
+import Map from './components/Map/Map.vue';
 </script>
 
 <style scoped>
