@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <div class="flex items-center justify-center gap-8 py-5">
             <a href="#" class="font-bold text-[#4E6C1D] ">HOME</a>
             <a href="#" class="font-bold text-[#4E6C1D]">ABOUT US</a>

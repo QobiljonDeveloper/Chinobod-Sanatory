@@ -28,10 +28,37 @@
                 </div>
             </div>
             <div class="relative partial-border p-5">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/IQw-4JABPCM?si=6GJE6JVpUhMIzq-n"
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qemqQHaeCYo?si=H8cORfQd24PdGPyH"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="flex items-center mt-10">
+            <div class="relative partial-border p-5">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qemqQHaeCYo?si=H8cORfQd24PdGPyH"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="flex flex-col">
+                <p class="text-[#4E6B20] text-3xl font-bold">Sizga nima taklif qila olamiz ?</p>
+                <p class="text-[#4E6B20] text-base font-bold max-w-[20%] mt-5">
+                    - Oshxona
+                    - Dam olish maydoni
+                    - Mashinalar uchun turargoh - Qulay xonalar
+                    - Yoqimli bog' manzarasi
+                    - Yuqori samarali davolash usullari
+                    - Qulay yashash sharoitlari
+                </p>
+                <div class="flex items-start justify-start gap-10 mt-5">
+                    <button class="bg-[#3D5F01] text-white font-roboto w-[175px] py-4 rounded-tl-3xl rounded-br-3xl">
+                        BATAFSIL
+                    </button>
+                    <button class="bg-[#3D5F01] text-white font-roboto px-4 py-4 rounded-tl-3xl rounded-br-3xl">
+                        <img src="../../assets/img/arrow.svg" alt="">
+                    </button>
+                </div>
             </div>
         </div>
     </div>
