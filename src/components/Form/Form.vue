@@ -47,7 +47,7 @@
             v-model="formData.type"
             class="w-2/4 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
           >
-            <option>Onl Ne</option>
+            <option>Only Ne</option>
           </select>
         </div>
         <div class="flex justify-end items-center w-[92%]">

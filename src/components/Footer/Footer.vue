@@ -41,6 +41,6 @@ export default {
 
 <style scoped>
 footer {
-  background-color: #4b5320; /* Match the green color from the image */
+  background-color: #3D5F00; 
 }
 </style>
