@@ -48,6 +48,12 @@
       Sanatoriyda 370 oʻringa moʻljallangan yotoq korpuslari (bir va ikki oʻrinli), 2 ta oilaviy kottej, klub, kutubxona,
       sport maydonchalari bor. "CH."s.da bekamu kust davolanish, marokli dam olish uchun barcha qulayliklar va orombaxsh
       mikroiqlim mavjud.</p>
+
+  </div>
+  <div class="flex justify-end container">
+    <router-link to="/" class="bg-[#3D5F01] text-white font-roboto px-4 py-4 rounded-tl-3xl rounded-br-3xl text-center ">
+      Home
+    </router-link>
   </div>
 </template>
 
@@ -79,4 +85,5 @@ export default defineComponent({
   height: 250px !important;
   object-fit: cover;
   /* Ensures the image covers the entire area without stretching */
-}</style>
+}
+</style>

@@ -5,7 +5,7 @@
       <router-view></router-view>
     </div>
     <div v-else>
-
+      <Navbar />
       <ShowCase id="showcase" />
       <AboutWe id="about-us" />
       <Rooms id="rooms" />
