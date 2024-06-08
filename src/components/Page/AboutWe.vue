@@ -122,11 +122,9 @@ export default {
                     va davolash uchun zarur diagnostika va davolash xonalari mavjud.
                 </p>
                 <div class="flex items-start justify-start gap-10 mt-5">
-                    <router-link to="/batafsil" target="_blank">
                         <button class="bg-[#3D5F01] text-white font-roboto w-[175px] py-4 rounded-tl-3xl rounded-br-3xl">
                             BATAFSIL
                         </button>
-                    </router-link>
 
                     <button class="bg-[#3D5F01] text-white font-roboto px-4 py-4 rounded-tl-3xl rounded-br-3xl">
                         <img src="../../assets/img/arrow.svg" alt="">
@@ -159,11 +157,9 @@ export default {
                     - Qulay yashash sharoitlari
                 </p>
                 <div class="flex items-start justify-start gap-10 mt-5">
-                    <router-link to="/batafsil">
                         <button class="bg-[#3D5F01] text-white font-roboto w-[175px] py-4 rounded-tl-3xl rounded-br-3xl">
                             BATAFSIL
                         </button>
-                    </router-link>
                     <button class="bg-[#3D5F01] text-white font-roboto px-4 py-4 rounded-tl-3xl rounded-br-3xl">
                         <img src="../../assets/img/arrow.svg" alt="">
                     </button>

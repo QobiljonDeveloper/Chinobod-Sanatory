@@ -30,25 +30,7 @@ import Comments from './components/Comments/Comments.vue'
 import Footer from './components/Footer/Footer.vue'
 import Rooms from './components/PageSec/Rooms.vue'
 import Batafsil from './components/Batafsil/Batafsil.vue';
-import { createRouter, createWebHistory } from 'vue-router';
 
-const routes = [
-    {
-        path: '/',
-        name: 'Home',
-        component: AboutWe
-    },
-    {
-        path: '/Form',
-        name: 'Form',
-        component: Form
-    }
-];
-
-const router = createRouter({
-    history: createWebHistory(),
-    routes
-});
 </script>
 
 <style scoped>
