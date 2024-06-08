@@ -19,9 +19,16 @@
     <swiper-slide class="slide !flex !justify-center">
       <img src="@/assets/Hotel-room/Hotel-room-2.svg" alt="" class="fixed-width-img" />
     </swiper-slide>
+    <swiper-slide class="slide !flex !justify-center">
+      <img src="@/assets/Hotel-room/Hotel-room-3.svg" alt="" class="fixed-width-img" />
+    </swiper-slide>
+    <swiper-slide class="slide !flex !justify-center">
+      <img src="@/assets/Hotel-room/Hotel-room-3.svg" alt="" class="fixed-width-img" />
+    </swiper-slide>
   </swiper>
   <div class="batafsil container">
-    <p class="text-[#4E6B20] text-base font-bold">"CHINOBOD" SANATORIYSI - ovqat hazm qilish aʼzolari (meʼda, ichak, jigar va oʻt pufagi) kasalliklarini davolashga
+    <p class="text-[#4E6B20] text-base font-bold">"CHINOBOD" SANATORIYSI - ovqat hazm qilish aʼzolari (meʼda, ichak, jigar
+      va oʻt pufagi) kasalliklarini davolashga
       ixtisoslashgan tibbiy sogʻlomlashtirish maskani. Toshkentning Yunusobod tumanida joylashgan. Sanatoriy hududi
       1938-yilda paxta tozalash zdlari ishchilarining dam olish zonasi boʻlgan, 1941-yil evakuatsiya qilingan gospital
       joylashtirilgan, 1946-yil sanatoriyga (75 oʻrinli) aylantirilgan. "CH." s.ning hozirgi maydoni 19 ga, atrofi mevali
@@ -66,7 +73,8 @@ export default defineComponent({
 })
 </script>
 
-<style scoped>.fixed-width-img {
+<style scoped>
+.fixed-width-img {
   width: 400px !important;
   height: 250px !important;
   object-fit: cover;

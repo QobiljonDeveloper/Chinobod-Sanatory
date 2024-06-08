@@ -26,9 +26,10 @@
                         class="bg-[#3D5F01] text-white font-roboto w-[175px] py-4 rounded-tl-3xl rounded-br-3xl text-center">
                         BATAFSIL
                     </router-link>
-                    <button class="bg-[#3D5F01] text-white font-roboto px-4 py-4 rounded-tl-3xl rounded-br-3xl">
+                    <router-link to="/batafsil" target="_blank"
+                        class="bg-[#3D5F01] text-white font-roboto px-4 py-4 rounded-tl-3xl rounded-br-3xl text-center">
                         <img src="../../assets/img/arrow.svg" alt="">
-                    </button>
+                    </router-link>
                 </div>
             </div>
             <div class="relative partial-border p-5" style="width: 560px;">
@@ -60,12 +61,12 @@
                     <router-link to="/batafsil" target="_blank"
                         class="bg-[#3D5F01] text-white font-roboto w-[175px] py-4 rounded-tl-3xl rounded-br-3xl text-center">
                         BATAFSIL
-                    </router-link>
+                    </router-link>  
 
-
-                    <button class="bg-[#3D5F01] text-white font-roboto px-4 py-4 rounded-tl-3xl rounded-br-3xl">
+                    <router-link to="/batafsil" target="_blank"
+                        class="bg-[#3D5F01] text-white font-roboto px-4 py-4 rounded-tl-3xl rounded-br-3xl text-center">
                         <img src="../../assets/img/arrow.svg" alt="">
-                    </button>
+                    </router-link>
                 </div>
             </div>
         </div>
