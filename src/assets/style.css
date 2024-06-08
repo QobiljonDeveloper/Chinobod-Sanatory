@@ -3,14 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  padding-bottom: 30px !important;
-}
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
 * {
     font-family: 'Roboto', sans-serif;
 }

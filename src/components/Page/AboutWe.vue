@@ -5,8 +5,8 @@
             <p class="text-[#4E6B20] text-base font-bold max-w-[75%] text-center mt-5">Chinobod sanatoriyasi siz va oilangiz
                 dam olishi va so'glomlashuvi uchun judayam ajoyb imkoniyat</p>
         </div>
-        <div class="flex items-center mt-10">
-            <div class="flex flex-col">
+        <div class="flex mt-10 items-center justify-between w-full">
+            <div class="flex flex-col" style="width: 660px">
                 <p class="text-[#4E6B20] text-3xl font-bold">Sizga nima taklif qila olamiz ?</p>
                 <p class="text-[#4E6B20] text-base font-bold max-w-[70%] mt-5">
                     Yuqori darajadagi xizmat, shinam xonalar, tog'li landshaftlarning noyob manzaralari nafaqat tanangiz
@@ -27,28 +27,29 @@
                     </button>
                 </div>
             </div>
-            <div class="relative partial-border p-5">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/qemqQHaeCYo?si=H8cORfQd24PdGPyH"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="relative partial-border p-5" style="width: 560px;">
+                <video ref="video1" width="640" height="360" controls @play="videoStarted" @pause="videoPaused">
+                    <source :src="videoSource" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
-        <div class="flex items-center mt-10">
-            <div class="relative partial-border p-5">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/qemqQHaeCYo?si=H8cORfQd24PdGPyH"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="flex mt-10 items-center justify-between w-full">
+            <div class="relative partial-border p-5" style="width: 560px;">
+                <video width="640" height="360" controls>
+                    <source :src="videoSource2" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
-            <div class="flex flex-col">
-                <p class="text-[#4E6B20] text-3xl font-bold">Sizga nima taklif qila olamiz ?</p>
-                <p class="text-[#4E6B20] text-base font-bold max-w-[20%] mt-5">
-                    - Oshxona
-                    - Dam olish maydoni
-                    - Mashinalar uchun turargoh - Qulay xonalar
-                    - Yoqimli bog' manzarasi
-                    - Yuqori samarali davolash usullari
+            <div class="flex flex-col" style="width: 400px;">
+                <p class="text-[#4E6B20] text-3xl font-bold">Dam olishingiz uchun qo'shimcha imkoniyatlar</p>
+                <p class="text-[#4E6B20] text-base font-bold mt-5 w-full">
+                    - Oshxona<br>
+                    - Dam olish maydoni<br>
+                    - Mashinalar uchun turargoh<br>
+                    - Qulay xonalar<br>
+                    - Yoqimli bog' manzarasi<br>
+                    - Yuqori samarali davolash usullari<br>
                     - Qulay yashash sharoitlari
                 </p>
                 <div class="flex items-start justify-start gap-10 mt-5">
@@ -65,8 +66,16 @@
 </template>
 
 <script>
+import videoSource from '@/assets/video/Suite_Room_Promo_Video_For_Hotel_｜｜_Created_by_CIRCLE_Digital_qemqQHaeCYo.mp4';
+import videoSource2 from '@/assets/video/Plaza Hotel ｜ Advertising [BCuH9jTMK58].mp4';
+
 export default {
-    name: 'YourComponent'
+    data() {
+        return {
+            videoSource: videoSource,
+            videoSource2: videoSource2,
+        };
+    },
 }
 </script>
 
