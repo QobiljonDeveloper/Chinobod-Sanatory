@@ -1,25 +1,26 @@
 <template>
   <div class="items-center flex-col contents container mx-auto">
-    <nav>
-      <Header />
-      <Navbar />
-      <ShowCase />
-    </nav>
-    <section>
-      <AboutWe />
-      <Rooms />
-      <Map />
-      <Form />
-      <Comments />
-      <Batafsil />
-    </section>
-    <footer>
-      <Footer />
-    </footer>
+    <Header id="header" />
+    <div v-if="isBatafsilRoute">
+      <router-view></router-view>
+    </div>
+    <div v-else>
+
+      <ShowCase id="showcase" />
+      <AboutWe id="about-us" />
+      <Rooms id="rooms" />
+      <Map id="map" />
+      <Form id="form" />
+      <Comments id="comments" />
+      <Footer id="footer" />
+    </div>
   </div>
 </template>
 
+
 <script setup>
+import { computed } from "vue";
+
 import Header from './components/Header/Header.vue';
 import Navbar from "./components/Navbar/Navbar.vue";
 import ShowCase from "./components/ShowCase/ShowCase.vue";
@@ -29,8 +30,11 @@ import Form from './components/Form/Form.vue'
 import Comments from './components/Comments/Comments.vue'
 import Footer from './components/Footer/Footer.vue'
 import Rooms from './components/PageSec/Rooms.vue'
-import Batafsil from './components/Batafsil/Batafsil.vue';
+import { useRoute } from 'vue-router';
 
+const route = useRoute();
+
+const isBatafsilRoute = computed(() => route.path === '/batafsil');
 </script>
 
 <style scoped>

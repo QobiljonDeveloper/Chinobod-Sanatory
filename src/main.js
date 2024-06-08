@@ -8,7 +8,7 @@ import 'element-plus/dist/index.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './assets/style.css';
 import 'swiper/swiper-bundle.css';
-
+import router from './router'; // Import your router configuration
 
 const app = createApp(App);
 
@@ -16,6 +16,7 @@ app.use(ElementPlus);
 
 app.use(VideoPlayer);
 
-
+// Use Vue Router
+app.use(router);
 // Mount the app
 app.mount('#app');
