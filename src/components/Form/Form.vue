@@ -77,8 +77,31 @@ export default {
   },
   methods: {
     handleSubmit() {
-      // Handle form submission
-      console.log(this.formData)
+      const BOT_TKEN = '7267506140:AAEHhJBrHmIyiqbqxefjdLMU4yubr9-7dk8'
+      const CHT_ID = -1002240327746
+      const message = `
+        <b>Ism Familiyangiz:</b> ${this.formData.name}\n<b>O'zingiz yashaydigan viloyat:</b> ${this.formData.region}\n<b>Telefon raqam:</b> ${this.formData.phone}\n<b>Band qilish turi:</b> ${this.formData.type}
+      `
+      fetch(`https://api.telegram.org/bot${BOT_TKEN}/sendMessage`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          chat_id: CHT_ID,
+          text: message,
+          parse_mode: 'HTML'
+        })
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log('Message sent:', data)
+          alert('Form submitted successfully!')
+        })
+        .catch((error) => {
+          console.error('Error sending message:', error)
+          alert('Failed to submit the form.')
+        })
     }
   }
 }
