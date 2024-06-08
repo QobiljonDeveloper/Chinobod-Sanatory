@@ -1,14 +1,21 @@
 <template>
   <div class="items-center flex-col contents container mx-auto">
-    <Header />
-    <Navbar />
-    <ShowCase />
-    <AboutWe />
-    <Rooms />
-    <Map />
-    <Form />
-    <Comments />
-    <Footer />
+    <nav>
+      <Header />
+      <Navbar />
+      <ShowCase />
+    </nav>
+    <section>
+      <AboutWe />
+      <Rooms />
+      <Map />
+      <Form />
+      <Comments />
+      <Batafsil />
+    </section>
+    <footer>
+      <Footer />
+    </footer>
   </div>
 </template>
 
@@ -22,5 +29,28 @@ import Form from './components/Form/Form.vue'
 import Comments from './components/Comments/Comments.vue'
 import Footer from './components/Footer/Footer.vue'
 import Rooms from './components/PageSec/Rooms.vue'
+import Batafsil from './components/Batafsil/Batafsil.vue';
+import { createRouter, createWebHistory } from 'vue-router';
+
+const routes = [
+    {
+        path: '/',
+        name: 'Home',
+        component: AboutWe
+    },
+    {
+        path: '/Form',
+        name: 'Form',
+        component: Form
+    }
+];
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes
+});
 </script>
-<style scoped></style>
+
+<style scoped>
+/* Your scoped styles */
+</style>

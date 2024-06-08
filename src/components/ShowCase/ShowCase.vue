@@ -12,7 +12,7 @@
         Yuqori texnalogiyalar bilan jihozlangan hamda shifobaxsh suvga ega sanatoriyamizga tashrif
         buyurishingizdan oldin o'z xonangizni ko'ring va joyingizni oldindan buyurtma qiling
       </p>
-      <div class="flex items-center gap-10">
+      <div class="flex items-center gap-5 ">
         <button class="bg-[#3D5F01] text-white font-roboto px-4 py-4 rounded-tl-3xl rounded-br-3xl">
           BUYURTMA BERISH
         </button>
