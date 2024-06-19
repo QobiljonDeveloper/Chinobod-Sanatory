@@ -1,31 +1,23 @@
 <template>
-  <div>
+  <div class="bg min-h-screen">
     <swiper class="swiper !container !py-10" :modules="modules" :slides-per-view="4" :free-mode="true"
       :pagination="{ clickable: true }">
-      <swiper-slide class="slide !flex !justify-center">
-        <img src="@/assets/Hotel-room/Hotel-room-1.svg" alt="" class="fixed-width-img" />
+    <swiper-slide class="slide !flex !justify-center">
+        <img src="@/assets/img/lan.jpg" alt="" class="fixed-width-img" />
       </swiper-slide>
       <swiper-slide class="slide !flex !justify-center">
         <img src="@/assets/Hotel-room/Hotel-room-1.svg" alt="" class="fixed-width-img" />
       </swiper-slide>
-      <swiper-slide class="slide !flex !justify-center">
-        <img src="@/assets/Hotel-room/Hotel-room-1.svg" alt="" class="fixed-width-img" />
-      </swiper-slide>
-      <swiper-slide class="slide !flex !justify-center">
-        <img src="@/assets/Hotel-room/Hotel-room-2.svg" alt="" class="fixed-width-img" />
-      </swiper-slide>
+    
+
       <swiper-slide class="slide !flex !justify-center">
         <img src="@/assets/Hotel-room/Hotel-room-2.svg" alt="" class="fixed-width-img" />
       </swiper-slide>
-      <swiper-slide class="slide !flex !justify-center">
-        <img src="@/assets/Hotel-room/Hotel-room-2.svg" alt="" class="fixed-width-img" />
-      </swiper-slide>
+   
       <swiper-slide class="slide !flex !justify-center">
         <img src="@/assets/Hotel-room/Hotel-room-3.svg" alt="" class="fixed-width-img" />
       </swiper-slide>
-      <swiper-slide class="slide !flex !justify-center">
-        <img src="@/assets/Hotel-room/Hotel-room-3.svg" alt="" class="fixed-width-img" />
-      </swiper-slide>
+     
     </swiper>
     <div class="batafsil container">
       <p class="text-[#4E6B20] text-base font-bold">"CHINOBOD" SANATORIYSI - ovqat hazm qilish aʼzolari (meʼda, ichak,
@@ -59,7 +51,7 @@
     <div class="flex justify-end container">
       <router-link to="/"
         class="bg-[#3D5F01] text-white font-roboto px-4 py-4 rounded-tl-3xl rounded-br-3xl text-center ">
-        Home
+        <img src="../../assets/img/arrow.svg" alt="">
       </router-link>
     </div>
   </div>
@@ -93,4 +85,8 @@ export default defineComponent({
   height: 250px !important;
   object-fit: cover;
   /* Ensures the image covers the entire area without stretching */
-}</style>
+}
+
+
+
+</style>

@@ -13,12 +13,12 @@
         buyurishingizdan oldin o'z xonangizni ko'ring va joyingizni oldindan buyurtma qiling
       </p>
       <div class="flex items-center gap-5 ">
-        <button class="bg-[#3D5F01] text-white font-roboto px-4 py-4 rounded-tl-3xl rounded-br-3xl">
+        <a  href="#form" class="bg-[#3D5F01] text-white font-roboto px-4 py-4 rounded-tl-3xl rounded-br-3xl">
           BUYURTMA BERISH
-        </button>
-        <button class="bg-[#3D5F01] text-white font-roboto px-4 py-4 rounded-tl-3xl rounded-br-3xl">
+        </a>
+        <a href="#form" class="bg-[#3D5F01] text-white font-roboto px-4 py-4 rounded-tl-3xl rounded-br-3xl">
           <img src="../../assets/img/arrow.svg" alt="" />
-        </button>
+        </a>
       </div>
     </div>
     <div class="w-[40%]">

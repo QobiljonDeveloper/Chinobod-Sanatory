@@ -17,6 +17,7 @@
       <button class="bg-[#3D5F01] mt-4 text-white font-roboto px-4 py-4 rounded-tl-3xl rounded-br-3xl">
         Xaritada Ko'rish
       </button>
+
     </div>
   </div>
 </template>

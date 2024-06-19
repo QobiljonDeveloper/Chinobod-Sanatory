@@ -20,7 +20,7 @@
                     qoyish
                     va davolash uchun zarur diagnostika va davolash xonalari mavjud.
                 </p>
-                <div class="flex items-start justify-start gap-10 mt-5">
+                <div class="flex items-start justify-start gap-5 mt-5">
 
                     <router-link to="/batafsil"
                         class="bg-[#3D5F01] text-white font-roboto w-[175px] py-4 rounded-tl-3xl rounded-br-3xl text-center">
@@ -57,7 +57,7 @@
                     - Yuqori samarali davolash usullari<br>
                     - Qulay yashash sharoitlari
                 </p>
-                <div class="flex items-start justify-start gap-10 mt-5">
+                <div class="flex items-start justify-start gap-5 mt-5">
                     <router-link to="/batafsil"
                         class="bg-[#3D5F01] text-white font-roboto w-[175px] py-4 rounded-tl-3xl rounded-br-3xl text-center">
                         BATAFSIL

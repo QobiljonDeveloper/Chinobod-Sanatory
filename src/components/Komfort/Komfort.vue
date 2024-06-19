@@ -1,0 +1,96 @@
+<template lang="">
+    <div class="bg min-h-screen flex justify-center items-center ">
+        <div class="container"><div class="flex justify-between w-full komfort">
+                <div class="right border-dashed border-4 border-[#4E6B20]">
+                    <video width="500" height="260" controls>
+                        <source :src="videoSource" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div>
+                    <div class="flex flex-col items-center gap-5">
+                        <div class="flex gap-5">
+                            <p class="text-[#4E6B20] text-2xl font-semibold">2 o'rinli standard</p>
+                            <p class="text-[#4E6B20] text-2xl font-semibold">350.000 so'm</p>
+                        </div>
+                        <button v-if="!selectedPaymentMethod"
+                            class="bg-[#3D5F01] text-white font-roboto w-[175px] py-4 rounded-tl-3xl rounded-br-3xl text-center"
+                            @click="handlePayment('click')">
+                            To'lov Qilish (Click)
+                        </button>
+                        <button v-if="selectedPaymentMethod === 'click'"
+                            class="bg-[#3D5F01] text-white font-roboto w-[175px] py-4 rounded-tl-3xl rounded-br-3xl text-center"
+                            @click="redirectToPayment('click')">
+                            To'lov Qilish (Click)
+                        </button>
+                        <button v-if="selectedPaymentMethod === 'payme'"
+                            class="bg-[#3D5F01] text-white font-roboto w-[175px] py-4 rounded-tl-3xl rounded-br-3xl text-center"
+                            @click="redirectToPayment('payme')">
+                            To'lov Qilish (Payme)
+                        </button>
+                        <button v-if="selectedPaymentMethod === 'uzum'"
+                            class="bg-[#3D5F01] text-white font-roboto w-[175px] py-4 rounded-tl-3xl rounded-br-3xl text-center"
+                            @click="redirectToPayment('uzum')">
+                            To'lov Qilish (Uzum)
+                        </button>
+                    </div>
+                    <div class="mt-10 items-center flex flex-col">
+                        <p>To'lov usulini tanlang:</p>
+                        <div class="flex gap-3">
+                            <button @click="handlePayment('click')">
+                                <img src="../../assets/img/click.svg" alt="Click">
+                            </button>
+                            <button @click="handlePayment('payme')">
+                                <img src="../../assets/img/payme.svg" alt="Payme">
+                            </button>
+                            <button @click="handlePayment('uzum')">
+                                <img src="../../assets/img/uzum.svg" alt="Uzum">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+        
+    </div>
+</template>
+<script>
+import videoSource2 from '@/assets/video/fg4tjryzpa50ibxc4jgg.mp4';
+
+
+
+
+export default {
+    data() {
+        return {
+            selectedPaymentMethod: null,
+            videoSource2: videoSource2,
+
+        };
+    },
+    methods: {
+        handlePayment(method) {
+            this.selectedPaymentMethod = method;
+        },
+        redirectToPayment(method) {
+            switch (method) {
+                case 'click':
+                    window.location.href = 'https://click.uz/ru';
+                    break;
+                case 'payme':
+                    window.location.href = 'https://payme.uz/home/main';
+
+                    break;
+                case 'uzum':
+                    window.location.href = 'https://uzumbank.uz/ru';
+
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+}
+</script>
+<style lang="">
+    
+</style>
