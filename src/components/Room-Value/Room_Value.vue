@@ -60,18 +60,14 @@
 </template>
   
 <script>
-import videoSource from '@/assets/video/rosp22hqgw7hqlvefp7b.mp4';
-import videoSource2 from '@/assets/video/fg4tjryzpa50ibxc4jgg.mp4';
-import videoSource3 from '@/assets/video/59tibuwdbivz34q3abnc.mp4';
+import videoSource2 from '@/assets/video/fg4tjryzpa50ibxc4jgg.mp4'
 
 
 export default {
     data() {
         return {
             selectedPaymentMethod: null,
-            videoSource: videoSource,
             videoSource2: videoSource2,
-            videoSource3: videoSource3,
         };
     },
     methods: {
