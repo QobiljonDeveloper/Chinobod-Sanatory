@@ -24,12 +24,7 @@
                     <router-link to="/Navigation" class="bg-[#3D5F01] text-white font-roboto w-[175px] py-4 rounded-tl-3xl rounded-br-3xl text-center">
                         BAND QILISH
                     </router-link>
-                    <!-- <button class="bg-[#3D5F01] text-white font-roboto w-[100px] py-4 rounded-tl-3xl rounded-br-3xl ">
-                        <a href="https://payme.uz/home/main">Payme</a>
-                    </button>
-                    <button class="bg-[#3D5F01] text-white font-roboto w-[100px] py-4 rounded-tl-3xl rounded-br-3xl ">
-                        <a href="https://click.uz/uz">Click</a>
-                    </button> -->
+                 
                 </div>
             </div>
                 <div class="right border-dashed border-4 border-[#4E6B20]">
@@ -59,12 +54,7 @@
                     <router-link to="/Navigation" class="bg-[#3D5F01] text-white font-roboto w-[175px] py-4 rounded-tl-3xl rounded-br-3xl text-center">
                         BAND QILISH
                     </router-link>
-                    <!-- <button class="bg-[#3D5F01] text-white font-roboto w-[100px] py-4 rounded-tl-3xl rounded-br-3xl ">
-                        <a href="https://payme.uz/home/main">Payme</a>
-                    </button>
-                    <button class="bg-[#3D5F01] text-white font-roboto w-[100px] py-4 rounded-tl-3xl rounded-br-3xl ">
-                        <a href="https://click.uz/uz">Click</a>
-                    </button> -->
+                 
                 </div>
             </div>
             <div class="right border-dashed border-4 border-[#4E6B20]">
@@ -94,12 +84,7 @@
                     <router-link to="/Navigation" class="bg-[#3D5F01] text-white font-roboto w-[175px] py-4 rounded-tl-3xl rounded-br-3xl text-center">
                         BAND QILISH
                     </router-link>
-                    <!-- <button class="bg-[#3D5F01] text-white font-roboto w-[100px] py-4 rounded-tl-3xl rounded-br-3xl ">
-                        <a href="https://payme.uz/home/main">Payme</a>
-                    </button>
-                    <button class="bg-[#3D5F01] text-white font-roboto w-[100px] py-4 rounded-tl-3xl rounded-br-3xl ">
-                        <a href="https://click.uz/uz">Click</a>
-                    </button> -->
+                 
                 </div>
             </div>
             <div class="right border-dashed border-4 border-[#4E6B20]">

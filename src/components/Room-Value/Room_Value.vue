@@ -1,8 +1,6 @@
 <template>
     <div class="bg min-h-screen flex flex-col justify-center">
         <div class="container flex flex-col gap-5 items-center w-full">
-         
-            
             <div class="flex justify-between w-full lux">
                 <div class="right border-dashed border-4 border-[#4E6B20]">
                     <video width="500" height="260" controls>
@@ -50,7 +48,11 @@
                                 <img src="../../assets/img/uzum.svg" alt="Uzum">
                             </button>
                         </div>
+                        <router-link to="/Room" class="text-left px-6 py-2 bg-[#022511] text-white max-w-xs rounded-lg">
+                            <img src="../../assets/img/exit.png" alt="">
+                        </router-link>
                     </div>
+
                 </div>
             </div>
         </div>

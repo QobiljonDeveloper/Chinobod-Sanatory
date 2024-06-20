@@ -1,6 +1,9 @@
 <template>
     <div class="bg min-h-screen flex justify-between items-center">
-        <div class="container flex flex-col justify-between w-full gap-10">
+        <div class="container flex flex-col justify-between w-full gap-10 pt-10">
+            <router-link to="/" class="text-left px-6 py-2 bg-[#022511] text-white rounded-lg w-[60px]">
+                <img src="../../assets/img/exit.png" alt="">
+            </router-link>  
             <div class="flex justify-between w-full">
                 <div class="right border-dashed border-4 border-[#4E6B20]">
                     <video width="500" height="260" controls>

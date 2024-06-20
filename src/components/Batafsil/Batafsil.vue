@@ -2,22 +2,22 @@
   <div class="bg min-h-screen">
     <swiper class="swiper !container !py-10" :modules="modules" :slides-per-view="4" :free-mode="true"
       :pagination="{ clickable: true }">
-    <swiper-slide class="slide !flex !justify-center">
-        <img src="@/assets/img/lan.jpg" alt="" class="fixed-width-img" />
+      <swiper-slide class="slide !flex !justify-center">
+        <img src="@/assets/img/land.jpg" alt="" class="fixed-width-img" />
       </swiper-slide>
       <swiper-slide class="slide !flex !justify-center">
-        <img src="@/assets/Hotel-room/Hotel-room-1.svg" alt="" class="fixed-width-img" />
+        <img src="../../assets/img/kitchen.jpg" alt="" class="fixed-width-img" />
       </swiper-slide>
-    
+      <swiper-slide class="slide !flex !justify-center">
+        <img src="../../assets/img/room.jpg" alt="" class="fixed-width-img" />
+      </swiper-slide>
 
       <swiper-slide class="slide !flex !justify-center">
-        <img src="@/assets/Hotel-room/Hotel-room-2.svg" alt="" class="fixed-width-img" />
+        <img src="../../assets/img/pool.jpg" alt="" class="fixed-width-img" />
       </swiper-slide>
-   
       <swiper-slide class="slide !flex !justify-center">
-        <img src="@/assets/Hotel-room/Hotel-room-3.svg" alt="" class="fixed-width-img" />
+        <img src="../../assets/img/dav.jpg" alt="" class="fixed-width-img" />
       </swiper-slide>
-     
     </swiper>
     <div class="batafsil container">
       <p class="text-[#4E6B20] text-base font-bold">"CHINOBOD" SANATORIYSI - ovqat hazm qilish aʼzolari (meʼda, ichak,
@@ -86,7 +86,4 @@ export default defineComponent({
   object-fit: cover;
   /* Ensures the image covers the entire area without stretching */
 }
-
-
-
 </style>

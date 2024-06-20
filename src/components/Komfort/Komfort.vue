@@ -1,12 +1,10 @@
 <template lang="">
     <div class="bg min-h-screen flex justify-center items-center ">
         <div class="container"><div class="flex justify-between w-full komfort">
-                <div class="right border-dashed border-4 border-[#4E6B20]">
-                    <video width="500" height="260" controls>
-                        <source :src="videoSource" type="video/mp4">
+                    <video width="640" height="360" controls>
+                        <source :src="videoSource2" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                </div>
                 <div>
                     <div class="flex flex-col items-center gap-5">
                         <div class="flex gap-5">
@@ -47,14 +45,19 @@
                                 <img src="../../assets/img/uzum.svg" alt="Uzum">
                             </button>
                         </div>
+                        <router-link to="/Room" class="text-left px-6 py-2 bg-[#022511] text-white max-w-xs rounded-lg">
+                <img src="../../assets/img/exit.png" alt="">
+            </router-link>
                     </div>
+                    
                 </div>
+                
             </div></div>
         
     </div>
 </template>
 <script>
-import videoSource2 from '@/assets/video/fg4tjryzpa50ibxc4jgg.mp4';
+import videoSource2 from '../../assets/video/fg4tjryzpa50ibxc4jgg.mp4';
 
 
 

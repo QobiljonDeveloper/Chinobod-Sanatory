@@ -13,7 +13,6 @@
       <Form id="form" />
       <Comments id="comments" />
       <Footer id="footer" />
-      <Error />
     </div>
   </div>
 </template>
@@ -31,10 +30,9 @@ import Form from './components/Form/Form.vue';
 import Comments from './components/Comments/Comments.vue';
 import Footer from './components/Footer/Footer.vue';
 import Rooms from './components/PageSec/Rooms.vue';
-import Error from './components/Error/Error.vue';
 
 const route = useRoute();
-const specialRoutes = ['/batafsil', '/Navigation', '/Room', '/Value', '/Standard' , '/Komfort'];
+const specialRoutes = ['/batafsil', '/Navigation', '/Room', '/Value', '/Standard' , '/Komfort' , '/Error'];
 const isSpecialRoute = computed(() => specialRoutes.includes(route.path));
 </script>
 

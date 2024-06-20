@@ -46,8 +46,11 @@
                 </div>
             </div>
             <div class="flex gap-5 my-5">
-             <router-link to="/Room" class="text-left px-6 py-2 bg-[#022511] text-white max-w-xs rounded-lg">A Blok</router-link>
-             <button class="text-left px-6 py-2 bg-[#022511] text-white max-w-xs rounded-lg">B Blok</button>
+                <router-link to="/Room" class="text-left px-6 py-2 bg-[#022511] text-white max-w-xs rounded-lg">A
+                    Blok</router-link>
+                <router-link to="/Room" class="text-left px-6 py-2 bg-[#022511] text-white max-w-xs rounded-lg">B
+                    Blok</router-link>
+
             </div>
             <div class="text">
                 <p v-if="selectedBlock === 'A blok'" class="text-lg font-semibold">A Blok (OSHQOZON BILAN BO'GLIQ MUAMMOLAR)
