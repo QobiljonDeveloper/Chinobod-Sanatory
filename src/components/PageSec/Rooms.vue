@@ -8,7 +8,7 @@
             <div class="left flex w-full flex-col">
                 <div class="flex justify-between w-[60%]">
                     <div>
-                        <p class="text-[#4E6B20] text-3xl font-extrabold">2 xona 2 krovat</p>
+                        <p class="text-[#4E6B20] text-3xl font-extrabold">Standard, 2 xona 2 krovat</p>
                     </div>
                     <div>
                         <p class="text-[#4E6B20] text-3xl font-semibold">300.000</p>
@@ -39,7 +39,7 @@
             <div class="left flex w-full flex-col">
                 <div class="flex justify-between w-[60%]">
                     <div>
-                        <p class="text-[#4E6B20] text-3xl font-extrabold">2 o'rinli standard</p>
+                        <p class="text-[#4E6B20] text-3xl font-extrabold">Komfort, 2 o'rinli standard</p>
                     </div>
                     <div>
                         <p class="text-[#4E6B20] text-3xl font-semibold">350.000</p>
@@ -70,7 +70,7 @@
             <div class="left flex w-full flex-col">
                 <div class="flex justify-between w-[60%]">
                     <div>
-                        <p class="text-[#4E6B20] text-3xl font-extrabold">Suit 2 to'shak, 1 xonali</p>
+                        <p class="text-[#4E6B20] text-3xl font-extrabold">Lux , Suit 2 to'shak, 1 xonali</p>
                     </div>
                     <div>
                         <p class="text-[#4E6B20] text-3xl font-semibold">400.000</p>
