@@ -3,11 +3,13 @@
         <div class="container">
             <div class="flex justify-center w-full komfort gap-16">
                 <div class="flex flex-col gap-5">
-                    <p class="text-[#4E6B20] text-2xl font-semibold text-center">2 o'rinli standard</p>
-                    <video width="540" height="360" controls>
-                        <source :src="videoSource2" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                    <p class="text-[#4E6B20] text-2xl font-semibold text-center">Komfort, 2 o'rinli standard</p>
+                    <div class="video right border-4 border-[#fff] rounded-lg">
+                        <video width="540" height="360" controls class="rounded-lg">
+                            <source :src="videoSource2" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
                 <div class="flex justify-center items-center">
                     <img src="../../assets/img/x.png" alt="" class="w-[200px]">
@@ -15,33 +17,40 @@
                 <div>
                     <div class="flex flex-col items-center gap-5">
                         <div class="">
-                            <p class="text-red-600 text-2xl font-medium text-center">1 kishi uchun narx : 300.000</p>
+                            <p class="text-red-600 text-2xl font-medium text-center">1 kishi uchun narx : 350.000</p>
                             <div class="relative mt-5">
-                                <input type="" v-model.number="inputValue" @input="validateInput"
+                                <input v-model.number="inputValue" @input="validateInput" @blur="resetInputValue" type="number"
                                     placeholder="Sonini kiriting"
                                     class="border rounded-lg px-4 py-2 w-[300px] shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 pr-12" />
-                               
+
                                 <p v-if="errorMessage" class="text-red-500 mt-2">{{ errorMessage }}</p>
                             </div>
                             <div></div>
                         </div>
+                        <div class="flex items-center gap-1">
+                            <p class="text-base text-[#4E6B20]">{{ inputValue || 1 }}</p>
+                            <p class="text-base text-[#4E6B20]">x</p>
+                            <p class="text-base text-[#4E6B20]">350,000</p>
+                            <p class="text-base text-[#4E6B20]">=</p>
+                            <p class="text-base text-[#4E6B20]">{{ totalPrice.toLocaleString() }}</p>
+                        </div>
                         <button v-if="!selectedPaymentMethod" :disabled="isInvalidInput"
-                            class="bg-[#3D5F01] text-white font-roboto w-[175px] py-4 rounded-tl-3xl rounded-br-3xl text-center shadow-xl disabled:opacity-50 disabled:cursor-not-allowed shadow-[#3D5F01]"
+                            class="gradient-button font-roboto py-4 text-center shadow-xl disabled:opacity-50 disabled:cursor-not-allowed shadow-[#3D5F01]"
                             @click="handlePayment('click')">
                             To'lov Qilish (Click)
                         </button>
                         <button v-if="selectedPaymentMethod === 'click'" :disabled="isInvalidInput"
-                            class="bg-[#3D5F01] text-white font-roboto w-[175px] py-4 rounded-tl-3xl rounded-br-3xl text-center shadow-xl disabled:opacity-50 disabled:cursor-not-allowed shadow-[#3D5F01]"
+                            class="gradient-button text-white font-roboto py-4 text-center shadow-xl disabled:opacity-50 disabled:cursor-not-allowed shadow-[#3D5F01]"
                             @click="redirectToPayment('click')">
                             To'lov Qilish (Click)
                         </button>
                         <button v-if="selectedPaymentMethod === 'payme'" :disabled="isInvalidInput"
-                            class="bg-[#3D5F01] text-white font-roboto w-[175px] py-4 rounded-tl-3xl rounded-br-3xl text-center shadow-xl disabled:opacity-50 disabled:cursor-not-allowed shadow-[#3D5F01]"
+                            class="gradient-button text-white font-roboto py-4 text-center shadow-xl disabled:opacity-50 disabled:cursor-not-allowed shadow-[#3D5F01]"
                             @click="redirectToPayment('payme')">
                             To'lov Qilish (Payme)
                         </button>
                         <button v-if="selectedPaymentMethod === 'uzum'" :disabled="isInvalidInput"
-                            class="bg-[#3D5F01] text-white font-roboto w-[175px] py-4 rounded-tl-3xl rounded-br-3xl text-center shadow-xl disabled:opacity-50 disabled:cursor-not-allowed shadow-[#3D5F01]"
+                            class="gradient-button text-white font-roboto py-4 text-center shadow-xl disabled:opacity-50 disabled:cursor-not-allowed shadow-[#3D5F01]"
                             @click="redirectToPayment('uzum')">
                             To'lov Qilish (Uzum)
                         </button>
@@ -68,7 +77,7 @@
         </div>
     </div>
 </template>
-  
+
 <script>
 import videoSource2 from '../../assets/video/fg4tjryzpa50ibxc4jgg.mp4'
 
@@ -84,6 +93,9 @@ export default {
     computed: {
         isInvalidInput() {
             return this.errorMessage !== ''
+        },
+        totalPrice() {
+            return (this.inputValue || 1) * 350000;
         }
     },
     methods: {
@@ -92,6 +104,11 @@ export default {
                 this.errorMessage = 'Son 15 dan oshmasligi kerak';
             } else {
                 this.errorMessage = '';
+            }
+        },
+        resetInputValue() {
+            if (!this.inputValue) {
+                this.inputValue = 1;
             }
         },
         handlePayment(method) {
@@ -115,7 +132,7 @@ export default {
     }
 }
 </script>
-  
+
 <style scoped>
 input {
     padding-right: 2.5rem;
@@ -126,5 +143,26 @@ button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
+
+.video {
+    box-shadow: 4.95px 0px 2.6px rgba(159, 159, 159);
+}
+
+.gradient-button {
+    background: linear-gradient(to top right, #3D5F01, rgb(61, 61, 61));
+    border: none;
+    color: white;
+    width: 175px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.gradient-button:hover {
+    background: linear-gradient(to right, #4d7901, rgb(70, 70, 70));
+}
 </style>
-  
