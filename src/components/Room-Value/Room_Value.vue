@@ -17,7 +17,7 @@
                 <div>
                     <div class="flex flex-col items-center gap-5">
                         <div class="">
-                            <p class="text-red-600 text-2xl font-medium text-center">1 kishi uchun narx : 400.000</p>
+                            <p class="text-red-600 text-2xl font-medium text-center">1 Kun uchun narx : 400.000</p>
                             <div class="relative mt-5">
                                 <input v-model.number="inputValue" @input="validateInput" @blur="resetInputValue" type="number"
                                     placeholder="Sonini kiriting"
@@ -32,7 +32,7 @@
                             <p class="text-base text-[#4E6B20]">x</p>
                             <p class="text-base text-[#4E6B20]">400,000</p>
                             <p class="text-base text-[#4E6B20]">=</p>
-                            <p class="text-base text-[#4E6B20]">{{ totalPrice.toLocaleString() }}</p>
+                            <p class="text-base text-[#4E6B20]">{{ totalPrice.toLocaleString()  + " so'm"}}</p>
                         </div>
                         <button v-if="!selectedPaymentMethod" :disabled="isInvalidInput"
                             class="gradient-button font-roboto py-4 text-center shadow-xl disabled:opacity-50 disabled:cursor-not-allowed shadow-[#3D5F01]"
