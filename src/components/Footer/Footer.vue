@@ -13,11 +13,11 @@
       </div>
       <div class="flex items-center  gap-5 w-[750px]">
         <div class="flex items-center gap-2">
-          <img src="../../assets/img/person.jpg" alt="" class="w-[80px] h-[80px] rounded-full">
+          <img src="../../assets/img/person.jpg" alt="" class="w-[80px] h-[80px] rounded-full object-cover">
           <p>Sayt G'oyasi : Surayyo Usmonova</p>
         </div>
         <div class="flex items-center gap-2">
-          <img src="../../assets/img/per.jpg" alt="" class="w-[80px] h-[80px] rounded-full">
+          <img src="../../assets/img/per.jpg" alt="" class="w-[80px] h-[80px] rounded-full object-cover">
           <p>Loyiha menejeri : Azizbek Nasullayev</p>
         </div>
       </div>
