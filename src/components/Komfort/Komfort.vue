@@ -55,6 +55,7 @@
                             To'lov Qilish (Uzum)
                         </button>
                     </div>
+                    <!-- change -->
                     <div class="mt-10 items-center flex flex-col">
                         <p>To'lov usulini tanlang:</p>
                         <div class="flex gap-3">
