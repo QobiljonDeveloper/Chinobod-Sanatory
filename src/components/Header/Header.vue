@@ -14,9 +14,9 @@
                 </div>
                 <div class="flex items-center gap-10">
                     <div class="flex gap-1">
-                        <button class="text-white font-roboto">Register</button>
+                        <a href="https://client.chinobod-sanatory.uz/" class="text-white font-roboto">Register</a>
                         <span class="text-white">/</span>
-                        <button class="text-white font-roboto">Login</button>
+                        <a href="https://client.chinobod-sanatory.uz/" class="text-white font-roboto">Login</a>
                     </div>
                 </div>
             </div>
