@@ -2,7 +2,7 @@
     <div>
         <div class="bg-[#3D5F00] w-full h-24 flex items-center justify-between">
             <div class="container mx-auto flex items-center justify-between">
-                <div class="relative">
+                <div class="relative search-container">
                     <input v-model="searchQuery" @input="handleSearch" placeholder="Search Here" type="text"
                         class="border-b-2 border-x-0 border-y-0 border-solid border-[#fafafa] bg-transparent w-[270px] py-1 outline-none px-3 text-white" />
                     <img src="../../assets/img/search.png" alt=""
@@ -12,13 +12,14 @@
                     <img src="../../assets/img/medicine.svg" alt="" class="w-16 h-16" />
                     <p class="text-white font-roboto">CHINABAD</p>
                 </div>
-                <div class="flex items-center gap-10">
+                <div class="flex items-center gap-10 links-container">
                     <div class="flex gap-1">
                         <a href="https://client.chinobod-sanatory.uz/" class="text-white font-roboto">Register</a>
                         <span class="text-white">/</span>
                         <a href="https://client.chinobod-sanatory.uz/" class="text-white font-roboto">Login</a>
                     </div>
                 </div>
+                <div class="hamburger-menu" @click="toggleMenu">&#9776;</div>
             </div>
         </div>
         <div v-if="searchResults.length > 0" class="search-results bg-white p-4">
@@ -28,9 +29,16 @@
                 </li>
             </ul>
         </div>
+        <div v-if="menuOpen" class="mobile-menu">
+            <input v-model="searchQuery" @input="handleSearch" placeholder="Search Here" type="text"
+                class="border-b-2 border-x-0 border-y-0 border-solid border-[#fafafa] bg-transparent w-full py-1 outline-none px-3 text-white" />
+            <div class="mobile-menu-items flex flex-col items-center">
+                <a href="https://client.chinobod-sanatory.uz/" class="text-white font-roboto py-2">Register</a>
+                <a href="https://client.chinobod-sanatory.uz/" class="text-white font-roboto py-2">Login</a>
+            </div>
+        </div>
     </div>
 </template>
-  
 <script setup>
 import { ref } from 'vue';
 
@@ -51,6 +59,7 @@ const items = [
 
 const searchQuery = ref('');
 const searchResults = ref([]);
+const menuOpen = ref(false);
 
 const handleSearch = () => {
     if (searchQuery.value) {
@@ -68,13 +77,49 @@ const scrollToRooms = () => {
         roomsSection.scrollIntoView({ behavior: 'smooth' });
     }
 };
+
+const toggleMenu = () => {
+    menuOpen.value = !menuOpen.value;
+};
 </script>
-  
 <style scoped>
 .search-results {
     max-height: 300px;
     overflow-y: auto;
     cursor: pointer;
-    /* Optional: Add pointer cursor for better UX */
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3D5F00;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .search-container,
+    .links-container {
+        display: none;
+    }
+
+    .container {
+        justify-content: space-between;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
 }
 </style>
