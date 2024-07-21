@@ -1,19 +1,24 @@
 <template>
-  <div class="container p-6 bg-white rounded-lg shadow-md !mt-10 !mb-10">
-    <h2 class="text-5xl font-bold text-gray-800 mb-4">IZOHLAR</h2>
-    <div class="rating flex mb-4" id="rating">
-      <span class="star text-7xl text-gray-400 cursor-pointer mr-1" data-value="1" @click="updateStars(1)">&#9734;</span>
-      <span class="star text-7xl text-gray-400 cursor-pointer mr-1" data-value="2" @click="updateStars(2)">&#9734;</span>
-      <span class="star text-7xl text-gray-400 cursor-pointer mr-1" data-value="3" @click="updateStars(3)">&#9734;</span>
-      <span class="star text-7xl text-gray-400 cursor-pointer mr-1" data-value="4" @click="updateStars(4)">&#9734;</span>
-      <span class="star text-7xl text-gray-400 cursor-pointer" data-value="5" @click="updateStars(5)">&#9734;</span>
+  <div class="container p-6 bg-white rounded-lg shadow-md mt-10 mb-10">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4 text-center">IZOHLAR</h2>
+    <div class="rating flex flex-wrap justify-center mb-4" id="rating">
+      <span class="star text-5xl sm:text-6xl md:text-7xl text-gray-400 cursor-pointer mr-1 mb-1" data-value="1"
+        @click="updateStars(1)">&#9734;</span>
+      <span class="star text-5xl sm:text-6xl md:text-7xl text-gray-400 cursor-pointer mr-1 mb-1" data-value="2"
+        @click="updateStars(2)">&#9734;</span>
+      <span class="star text-5xl sm:text-6xl md:text-7xl text-gray-400 cursor-pointer mr-1 mb-1" data-value="3"
+        @click="updateStars(3)">&#9734;</span>
+      <span class="star text-5xl sm:text-6xl md:text-7xl text-gray-400 cursor-pointer mr-1 mb-1" data-value="4"
+        @click="updateStars(4)">&#9734;</span>
+      <span class="star text-5xl sm:text-6xl md:text-7xl text-gray-400 cursor-pointer mb-1" data-value="5"
+        @click="updateStars(5)">&#9734;</span>
     </div>
     <textarea v-model="formData.comment"
-      class="w-full h-40 p-4 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-blue-600"
+      class="w-full h-32 sm:h-40 p-4 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-blue-600"
       placeholder="Sanatoriyamiz haqida fikringizni kiriting"></textarea>
     <div class="flex justify-end">
-      <button type="submit" class="bg-[#3D5F01] mt-4 text-white font-roboto px-4 py-4 rounded-tl-3xl rounded-br-3xl"
-        @click="handleSubmit">
+      <button type="submit"
+        class="bg-[#3D5F01] mt-4 text-white font-roboto px-4 py-2 rounded-tl-3xl rounded-br-3xl text-sm sm:text-base">
         Tasdiqlash
       </button>
     </div>
@@ -50,8 +55,8 @@ export default {
       });
     },
     handleSubmit() {
-      const BOT_TOKEN = '7267506140:AAEHhJBrHmIyiqbqxefjdLMU4yubr9-7dk8'; 
-      const CHAT_ID = -1002240327746; 
+      const BOT_TOKEN = '7267506140:AAEHhJBrHmIyiqbqxefjdLMU4yubr9-7dk8';
+      const CHAT_ID = -1002240327746;
 
       const message = `
         <b>Rating:</b> ${this.formData.rating} stars
@@ -94,7 +99,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .container {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -102,5 +107,4 @@ export default {
 
 .star {
   cursor: pointer;
-}
-</style>
+}</style>

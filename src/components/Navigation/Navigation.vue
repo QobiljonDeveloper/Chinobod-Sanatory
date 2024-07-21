@@ -7,11 +7,11 @@
         </div>
         <div class="container mx-auto navigator">
             <h1 class="text-2xl font-bold mb-6">Sanatoriyamizga xush kelibsiz</h1>
-            <div class="flex justify-between mb-6">
-                <div class="w-2/3">
-                    <img src="@/assets/img/XARITA.png" alt="Xarita">
+            <div class="flex flex-col lg:flex-row lg:justify-between mb-6">
+                <div class="w-full lg:w-2/3">
+                    <img src="@/assets/img/XARITA.png" alt="Xarita" class="w-full">
                 </div>
-                <div class="w-1/3 pl-6">
+                <div class="w-full lg:w-1/3 lg:pl-6">
                     <p class="text-lg font-semibold mb-4">Qayerga borishni istaysiz?</p>
                     <select v-model="selectedBlock"
                         class="block w-full mb-4 p-2 rounded-lg border-2 border-solid border-[#114E05]">
@@ -23,29 +23,29 @@
                     </select>
                     <div class="flex flex-col space-y-4">
                         <img v-if="selectedBlock === 'A blok'" src="@/assets/img/outside.jpg" alt="Image 1"
-                            class="rounded-lg shadow-lg w-[500px] h-[180px] object-cover">
+                            class="rounded-lg shadow-lg w-full lg:w-[500px] h-[180px] object-cover">
                         <img v-if="selectedBlock === 'A blok'" src="@/assets/img/outside.jpg" alt="Image 1"
-                            class="rounded-lg shadow-lg w-[500px] h-[180px] object-cover">
+                            class="rounded-lg shadow-lg w-full lg:w-[500px] h-[180px] object-cover">
 
                         <img v-if="selectedBlock === 'B blok'" src="@/assets/img/images.jpg" alt="Image 1"
-                            class="rounded-lg shadow-lg w-[500px] h-[180px]  object-cover">
+                            class="rounded-lg shadow-lg w-full lg:w-[500px] h-[180px]  object-cover">
                         <img v-if="selectedBlock === 'B blok'" src="@/assets/img/images.jpg" alt="Image 2"
-                            class="rounded-lg shadow-lg w-[500px] h-[180px] object-cover">
+                            class="rounded-lg shadow-lg w-full lg:w-[500px] h-[180px] object-cover">
                         <img v-if="selectedBlock === 'Kirish'" src="@/assets/img/enterance.jpg" alt="Image 1"
-                            class="rounded-lg shadow-lg w-[500px] h-[180px]  object-cover">
+                            class="rounded-lg shadow-lg w-full lg:w-[500px] h-[180px]  object-cover">
                         <img v-if="selectedBlock === 'Kirish'" src="@/assets/img/enterance.jpg" alt="Image 2"
-                            class="rounded-lg shadow-lg w-[500px] h-[180px] object-cover">
+                            class="rounded-lg shadow-lg w-full lg:w-[500px] h-[180px] object-cover">
                         <img v-if="selectedBlock === 'Qabul bolimi'" src="@/assets/img/res.jpg" alt="Image 1"
-                            class="rounded-lg shadow-lg w-[500px] h-[180px]  object-cover">
+                            class="rounded-lg shadow-lg w-full lg:w-[500px] h-[180px]  object-cover">
                         <img v-if="selectedBlock === 'Qabul bolimi'" src="@/assets/img/res.jpg" alt="Image 2"
-                            class="rounded-lg shadow-lg w-[500px] h-[180px] object-cover">
+                            class="rounded-lg shadow-lg w-full lg:w-[500px] h-[180px] object-cover">
                     </div>
                     <router-link to="/Error" class="block mt-3 w-full bg-[#114E05] text-white py-2 rounded-lg text-center">
                         Navigatorni ishga tushirish
                     </router-link>
                 </div>
             </div>
-            <div class="flex gap-5 my-5">
+            <div class="flex flex-col lg:flex-row gap-5 my-5">
                 <router-link to="/Room" class="text-left px-6 py-2 bg-[#022511] text-white max-w-xs rounded-lg">A
                     Blok</router-link>
                 <router-link to="/Room" class="text-left px-6 py-2 bg-[#022511] text-white max-w-xs rounded-lg">B
